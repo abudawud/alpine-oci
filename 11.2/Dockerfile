@@ -20,3 +20,8 @@ RUN set -eux; \
 	# cleaning
 	cd - ; \
 	rm instantclient_11_2.tar.xz
+
+ENV ORACLE_BASE /usr/lib/instantclient_11_2
+ENV LD_LIBRARY_PATH /usr/lib/instantclient_11_2
+ENV TNS_ADMIN /usr/lib/instantclient_11_2
+ENV ORACLE_HOME /usr/lib/instantclient_11_2
